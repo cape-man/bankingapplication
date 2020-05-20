@@ -1,5 +1,5 @@
 {
-  "name": "Bank-App",
+  "name": "BankApp",
   "description": "Contains a bank application written in AngularJS",
   "version": "1.0.0",
   "dependencies": {
