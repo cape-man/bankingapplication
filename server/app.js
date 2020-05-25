@@ -10,7 +10,7 @@ var express = require('express'),
 var app = express();
 exports.startServer = function () {
   app.set('port', process.env.PORT || 3300);
-  app.set('host', process.env.HOST );
+//  app.set('host', "https://cape-test.southeastasia.cloudapp.azure.com/" );
   app.engine('.html', require('ejs').__express);
   app.set('views', path.join(__dirname, '../public/views'));
   app.set('view engine', 'html');
@@ -22,7 +22,7 @@ exports.startServer = function () {
 
   app.get('/bank', function (req, res) {
     res.render('index', {
-      // key : value
+       key : value
     });
   });
   app.get('/*');
