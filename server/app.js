@@ -10,7 +10,7 @@ var express = require('express'),
 var app = express();
 exports.startServer = function () {
   app.set('port', process.env.PORT || 3300);
-  app.set('host', "https://cape-test.southeastasia.cloudapp.azure.com" );
+  app.set('host', "http://cape-test.southeastasia.cloudapp.azure.com");
   app.engine('.html', require('ejs').__express);
   app.set('views', path.join(__dirname, '../public/views'));
   app.set('view engine', 'html');
@@ -28,7 +28,7 @@ exports.startServer = function () {
   app.get('/*');
 
   http.createServer(app).listen(app.get('port'), function () {
-    console.log('Demo server listening on port ' + app.get('port') + app.get('host'));
+    console.log('Demo server listening on port ' + app.get('port') );
   });
 
 };
