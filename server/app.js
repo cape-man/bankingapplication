@@ -28,7 +28,7 @@ exports.startServer = function () {
   app.get('/*');
 
   http.createServer(app).listen(app.get('port'), function () {
-    console.log('Demo server listening on port ' + app.get('port') + path);
+    console.log('Demo server listening on port ' + app.get('port') + app.get('host'));
   });
 
 };
