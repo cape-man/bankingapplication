@@ -22,7 +22,7 @@ exports.startServer = function () {
 
   app.get('/bank', function (req, res) {
     res.render('index', {
-       key : value
+    //   key : value
     });
   });
   app.get('/*');
